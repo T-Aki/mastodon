@@ -19,6 +19,7 @@ class AboutController < ApplicationController
 
   def set_instance_presenter
     @instance_presenter = InstancePresenter.new
+    @instance_presenter.site_description = "hoge"
   end
 
   def set_body_classes
